@@ -35,7 +35,7 @@
     .hero { margin-left: 150px;}
     .hero-title { font-size: 2.4rem; font-weight: 700; color: #0f1724; }
     .hero-text { max-width: 640px; color:#495057; margin-top: 12px; }
-
+    .hero-img { width: 200px; height: 250px;}
     .hero-social .bi { font-size: 1.05rem; color: #222;}
 
     /* Project card */
@@ -99,7 +99,7 @@
       background: var(--accent-strong);
       color: #fff;
       padding: 60px 30px;
-      border-top-left-radius: 50px;
+      /* border-top-left-radius: 50px; */
       /* margin: 56px 0; */
       position: relative;
       overflow: hidden;
@@ -127,17 +127,17 @@
     }
 
     /* shapes - white, translucent */
-    .shape { position:absolute; background: #fff; opacity: .18; pointer-events: none; }
+    .shape { position:absolute; background: #fff; opacity: .50; pointer-events: none; }
     .shape.circle { width:90px; height:90px; border-radius:999px; }
     .shape.small-circle { width:40px; height:40px; border-radius:999px; }
     .shape.rect { width:110px; height:18px; border-radius:8px; }
     .shape.semi { width:120px; height:60px; border-radius:120px 120px 0 0; }
 
     /* sample shape placements inside contact */
-    .contact-shape-1 { top:18px; right:6%; transform: rotate(10deg); }
+    .contact-shape-1 { top:50px; right:6%; transform: rotate(10deg); }
     .contact-shape-2 { left:8%; bottom:38px; transform: rotate(-18deg); }
     .contact-shape-3 { right:18%; bottom:10%; opacity: .12; }
-    .contact-shape-4 { left:18%; top:20%; opacity: .12; }
+    .contact-shape-4 { left:18%; top:20%; opacity: .50; }
 
     /* responsiveness tweaks */
     @media (max-width: 767px){

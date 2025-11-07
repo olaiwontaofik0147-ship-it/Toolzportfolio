@@ -13,11 +13,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-dark">
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg px-4 shadow-sm fixed-top">
-    <a class="navbar-brand" href="#">My Logo</a>
+  <nav class="navbar navbar-expand-lg px-4 shadow-sm fixed-top bg-dark">
+    <a class="navbar-brand text-info" href="#">My Logo</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse"
       aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,9 +26,9 @@
 
     <div class="collapse navbar-collapse justify-content-end" id="navCollapse">
       <ul class="navbar-nav align-items-center">
-        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link text-success" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link text-secondary" href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -36,44 +36,66 @@
   <!-- <main class="container"> -->
   <!-- HERO -->
   <section class="hero-section text-md-start mt-5 p-5">
-    <div class="hero">
-      <h1 class="hero-title">I'm Taofik.<br>Glad to see you!</h1>
-      <p class="hero-text">
-        I’m a software developer! I can help you build a product, feature or website.
-        Look through<br> some of my work and experience! If you like what you see and have
-        a project you need<br> coded, don’t hesitate to contact me.
-      </p>
+    <div class="d-flex justify-content-between">
+      <div class="hero">
+        <h1 class="hero-title text-danger">I'm Taofik.<br>Glad to see you!</h1>
+        <p class="hero-text">
+          I’m a software developer! I can help you build a product, feature or website.
+          Look through<br> some of my work and experience! If you like what you see and have
+          a project you need<br> coded, don’t hesitate to contact me.
+        </p>
 
-      <div class="hero-social mt-3">
-        <div class="connect-title">Let's connect</div>
-        <div class="about-socials">
-          <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-          <a href="https://www.instagram.com/kvngtoolz?igsh=NWt6NWk2aDNmZ28z&utm_source=qr" aria-label="Medium"><i class="bi bi-instagram"></i></a>
-          <a href="https://github.com/olaiwontaofik0147-ship-it" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <div class="hero-social mt-3">
+          <div class="connect-title">Let's connect</div>
+          <div class="about-socials">
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/kvngtoolz?igsh=NWt6NWk2aDNmZ28z&utm_source=qr" aria-label="Medium"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://github.com/olaiwontaofik0147-ship-it" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          </div>
         </div>
+      </div>
+      <div class="mt-4 mt-md-0">
+        <img src="mugshot.jpg" alt="mugshot" class="img-fluid hero-img">
       </div>
     </div>
   </section>
 
   <!-- PORTFOLIO -->
-  <section id="portfolio" class="project-card container">
-    <div class="project-card row align-items-center">
+  <section id="portfolio" class="project-card container bg-danger">
+    <div class="project-card row align-items-center mt-2 bg-dark">
       <div class="col-md-6">
-        <img src="figma.png" alt="Project image" class="img-fluid rounded">
+        <img src="figma.png" alt="Project image" class="img-fluid">
       </div>
-      <div class="col-md-6 mt-3 mt-md-0">
+      <div class="col-md-6 mt-3 mt-md-0 text-light">
         <h3 class="mb-1"><strong>E-commerce</strong></h3>
-        <p class="text-muted mb-2">FASHION • Front End Dev • 2025</p>
+        <p class="text-light mb-2">FASHION • Front End Dev • 2025</p>
         <p class="mb-3">A daily selection of the best collections on discounts;<br> hurry while stock lasts .</p>
 
         <div class="mb-3">
-          <span class="badge bg-light text-dark me-1">html</span>
-          <span class="badge bg-light text-dark me-1">css</span>
+          <span class="badge bg-danger text-dark me-1">html</span>
+          <span class="badge bg-info text-dark me-1">css</span>
           <span class="badge bg-light text-dark">javascript</span>
         </div>
 
         <a href="https://prismatic-kitsune-f5f760.netlify.app/" class="btn btn-outline-primary">See project</a>
+      </div>
+    </div>
+    <div class="project-card row align-items-center mt-4 bg-dark">
+      <div class="col-md-6">
+        <img src="Fasco.png" alt="Project image" class="img-fluid">
+      </div>
+      <div class="col-md-6 mt-3 mt-md-0 text-light">
+        <h3 class="mb-1"><strong>E-commerce</strong></h3>
+        <p class="text-light mb-2">FASHION • Front End Dev • 2025</p>
+        <p class="mb-3">Online Shopping Website.</p>
+
+        <div class="mb-3">
+          <span class="badge bg-warning text-dark me-1">React</span>
+        </div>
+
+        <a href="https://fasco-online-shopping.netlify.app/" class="btn btn-outline-primary">See project</a>
       </div>
     </div>
   </section>
@@ -97,7 +119,8 @@
           <div class="about-socials">
             <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="https://www.instagram.com/kvngtoolz?igsh=NWt6NWk2aDNmZ28z&utm_source=qr" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.instagram.com/kvngtoolz?igsh=NWt6NWk2aDNmZ28z&utm_source=qr" aria-label="Instagram"><i
+                class="bi bi-instagram"></i></a>
             <a href="https://github.com/olaiwontaofik0147-ship-it" aria-label="GitHub"><i class="bi bi-github"></i></a>
           </div>
 
