@@ -35,7 +35,7 @@
     .hero { margin-left: 150px;}
     .hero-title { font-size: 2.4rem; font-weight: 700; color: #0f1724; }
     .hero-text { max-width: 640px; color:#495057; margin-top: 12px; }
-    .hero-img { width: 200px; height: 250px;}
+    .hero-img { width: 100px; height: 150px;}
     .hero-social .bi { font-size: 1.05rem; color: #222;}
 
     /* Project card */
@@ -87,7 +87,7 @@
 
     /* badges / small cards in About right column */
     .skill-card {
-      background: #fafafa;
+      background: #dbd2d2;
       border-radius: 10px;
       padding: 14px;
       margin-bottom: 12px;
